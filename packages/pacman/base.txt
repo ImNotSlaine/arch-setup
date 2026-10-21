@@ -1,0 +1,68 @@
+# System & CLI utils 
+git
+bash-completion
+neovim
+eza
+chezmoi
+xdg-utils
+xdg-user-dirs
+man
+man-db
+htop
+
+# Hyprland
+sddm
+xorg-server
+hyprland
+uwsm
+libnewt
+xorg-hyprland
+hyprpolkitagent
+polkit
+xdg-desktop-portal-hyprland
+xdg-desktop-portal-gtk
+qt5-wayland
+qt6-wayland
+mako
+fuzzel
+
+# Shell
+quickshell
+libnotify
+
+# Audio
+pipewire
+pipewire-alsa
+pipewire-pulse
+wireplumber
+
+# Network
+networkmanager
+
+# Screenshots & clipboard
+grim
+slurp
+wl-clipboard
+cliphist
+
+# Files
+dolphin
+kio-extras
+kdegraphics-thumbnailers
+ffmpegthumbs
+ark
+archlinux-xdg-menu
+
+# Other packages
+gwenview
+vlc
+flatpak
+cmus
+
+# Terminal
+kitty
+
+# Fonts
+ttf-mononoki-nerd
+noto-fonts
+noto-fonts-emoji

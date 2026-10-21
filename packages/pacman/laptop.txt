@@ -1,0 +1,5 @@
+tlp
+brightnessctl
+upower
+bluez
+bluez-utils
