@@ -1,0 +1,5 @@
+hyprpolkitagent.service
+sddm.service
+NetworkManager.service
+systemd-timesyncd.service
+fstrim.timer
