@@ -52,7 +52,7 @@ PKG_GROUPS=(base "$PROFILE")
 (( EDIT ))      && PKG_GROUPS+=(edit)
 export ROOT DRY_RUN GAMING DEV EDIT PROFILE
 
-log "Profile: $PROFILE | Groups: ${PGK_GROUPS[*]} | | dry-run: $DRY_RUN"
+log "Profile: $PROFILE | Groups: ${PKG_GROUPS[*]} | dry-run: $DRY_RUN"
 
 for m in "${MODULES[@]}"; do
     if (( ${#ONLY[@]} )) && [[ ! " ${ONLY[*]} " == *" $m "* ]]; then continue; fi

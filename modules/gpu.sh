@@ -35,7 +35,7 @@ if (( amd )); then
     log "AMD GPU detected"; pkgs+=("${AMD_PKGS[@]}")
     (( GAMING )) && pkgs+=("${AMD_LIB32[@]}")
 fi
-if
+if (( nvidia)); then
     log "Nvidia GPU detected"; pkgs+=("${NVIDIA_PKGS[@]}")
     (( GAMING )) && pkgs+=("${NVIDIA_LIB32[@]}")
     warn "nvidia-open only works for Turing (GTX 16xx/RTX 20xx) or newer"

@@ -1,4 +1,4 @@
-# System & CLI utils 
+# System & CLI utils
 git
 bash-completion
 neovim
@@ -6,35 +6,27 @@ eza
 chezmoi
 xdg-utils
 xdg-user-dirs
-man
 man-db
-htop
+btop
 
 # Hyprland
 sddm
-xorg-server
 hyprland
 uwsm
-libnewt
-xorg-hyprland
 hyprpolkitagent
 polkit
 xdg-desktop-portal-hyprland
 xdg-desktop-portal-gtk
 qt5-wayland
-qt6-wayland
 mako
 fuzzel
 
 # Shell
 quickshell
-libnotify
 
 # Audio
-pipewire
 pipewire-alsa
 pipewire-pulse
-wireplumber
 
 # Network
 networkmanager
@@ -47,17 +39,18 @@ cliphist
 
 # Files
 dolphin
-kio-extras
 kdegraphics-thumbnailers
 ffmpegthumbs
 ark
 archlinux-xdg-menu
 
 # Other packages
+bitwarden
 gwenview
 vlc
 flatpak
 cmus
+cava
 
 # Terminal
 kitty

@@ -3,7 +3,7 @@
 run sudo pacman -Syu --noconfirm
 run sudo pacman -S --needed --noconfirm base-devel git
 
-if (( GAMING )) && ! grep -q '^\[multilib\]' etc\pacman.conf; then
+if (( GAMING )) && ! grep -q '^\[multilib\]' /etc/pacman.conf; then
     log "Enabling multilib"
     run sudo sed -i '/^#\[multilib\]/,/^#Include/ s/^#//' /etc/pacman.conf
     run sudo pacman -Syu --noconfirm
@@ -19,4 +19,6 @@ if ! command -v paru >/dev/null 2>&1; then
         (cd "$tmp/paru-bin" && makepkg -si --noconfirm)
         rm -rf "$tmp"
     fi
+else
+    log "Paru already installed"
 fi

@@ -8,14 +8,14 @@ die()   { printf '\e[31m[x]\e[0m %s\n' "$*" >&2; exit 1; }
 
 run() {
     if (( DRY_RUN )); then
-        printf '[dry-run] '; printf '%q ' "$@"; echo
+        printf '\e[33m[dry-run]\e[0m %s\n '; printf '%q ' "$@"; echo
     else
         "$@"
     fi
 }
 
 read_list() {
-    sed 's/[[:space:]]*#.*//' "$1" | grep -v 'v[[:space:]]*$' || true
+    sed 's/[[:space:]]*#.*//' "$1" | grep -v '^[[:space:]]*$' || true
 }
 
 # Collect all packages of active groups 
