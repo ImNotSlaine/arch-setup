@@ -1,6 +1,6 @@
 # AUR repository packages
 
-mapfile -t pkgs < <(collect_pkgs aur)
+mapfile -t pkgs < <(collect_list aur)
 if (( ${#pkgs[@]} )); then
     run paru -S --needed --noconfirm "${pkgs[@]}"
 else

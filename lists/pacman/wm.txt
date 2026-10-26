@@ -1,0 +1,38 @@
+# Hyprland
+sddm
+uwsm
+hyprland
+hyprpolkitagent
+polkit
+xdg-desktop-portal-hyprland
+xdg-desktop-portal-gtk
+qt5-wayland
+
+# Audio
+pipewire-alsa
+pipewire-pulse
+
+# Utils
+mako
+fuzzel
+grim
+slurp
+wl-clipboard
+quickshell
+
+# Programs
+kitty
+btop
+cmus
+cava
+vlc
+imv
+bitwarden
+ranger
+thunar
+thunar-archive-plugin
+thunar-volman
+tumbler
+ffmpegthumbnailer
+librewolf
+flatpak

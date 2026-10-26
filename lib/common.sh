@@ -18,6 +18,14 @@ read_list() {
     sed 's/[[:space:]]*#.*//' "$1" | grep -v '^[[:space:]]*$' || true
 }
 
+collect_list() {
+    local kind=$1 g f
+    for g in "${PKG_GROUPS[@]}"; do
+        f="$ROOT/lists/$kind/$g.txt"
+        if [[ -f $f ]]; then read_list "$f"; fi
+    done | sort -u
+}
+
 # Collect all packages of active groups 
 collect_pkgs() {
     local kind=$1 g f

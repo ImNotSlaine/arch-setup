@@ -1,0 +1,17 @@
+# System & CLI utils
+base-devel
+bash-completion
+open-ssh
+networkmanager
+git
+neovim
+eza
+xdg-utils
+xdg-user-dirs
+man-db
+htop
+
+# Fonts
+ttf-mononoki-nerd
+noto-fonts
+noto-fonts-emoji

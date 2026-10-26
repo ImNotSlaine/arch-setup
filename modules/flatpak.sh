@@ -6,6 +6,14 @@ FLATHUB_URL="https://dl.flathub.org/repo/flathub.flatpakrepo"
 log "Adding remote Flathub"
 run sudo flatpak remote-add --if-not-exists "$SCOPE" flathub "$FLATHUB_URL"
 
+if (( EDIT )); then
+    tmp="$(mktemp -d)"
+    log "Installing ArtCraft launcher app"
+    run wget "$tmp" "https://github.com/storytold/craft-launcher/releases/download/v0.5.1/artcraft-launcher-0.5.1-linux-x86_64.flatpak"
+    run flatpak install --user "$tmp/artcraft-launcher-0.5.1-linux-x86_64.flatpak" \
+        || warn "Couldn't install Artcraft launcher app"
+fi
+
 mapfile -t apps < <(collect_flatpaks)
 if (( ${#apps[@]} == 0 )); then
     log "No flatpaks in profile"
