@@ -7,7 +7,7 @@
 #     log "No pacman packages for this profile"
 # fi
 
-mapfile -t pkgs < <(collect_list pacman)
+mapfile -t pkgs < <(collect pacman)
 if (( ${#pkgs[@]} )); then
     run sudo pacman -S --needed --noconfirm "${pkgs[@]}"
 else

@@ -14,7 +14,7 @@ if (( EDIT )); then
         || warn "Couldn't install Artcraft launcher app"
 fi
 
-mapfile -t apps < <(collect_flatpaks)
+mapfile -t apps < <(collect flatpak)
 if (( ${#apps[@]} == 0 )); then
     log "No flatpaks in profile"
 else

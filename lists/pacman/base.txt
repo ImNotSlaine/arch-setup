@@ -1,7 +1,7 @@
 # System & CLI utils
 base-devel
 bash-completion
-open-ssh
+openssh
 networkmanager
 git
 neovim

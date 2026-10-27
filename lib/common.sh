@@ -18,7 +18,7 @@ read_list() {
     sed 's/[[:space:]]*#.*//' "$1" | grep -v '^[[:space:]]*$' || true
 }
 
-collect_list() {
+collect() {
     local kind=$1 g f
     for g in "${PKG_GROUPS[@]}"; do
         f="$ROOT/lists/$kind/$g.txt"
