@@ -13,6 +13,7 @@ pipewire-alsa
 pipewire-pulse
 
 # Utils
+chezmoi
 mako
 fuzzel
 grim
