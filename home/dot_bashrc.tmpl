@@ -1,0 +1,25 @@
+#
+# ~/.bashrc
+#
+
+[[ $- != *i* ]] && return
+
+# Editor
+export VISUAL={{ if .gui }}"code --wait"{{ else }}nvim{{ end }}
+export EDITOR=nvim
+
+alias eza='eza -g --group-directories-first{{ if .gui}} --icons{{ end }} -a -w 80 --sort=name'
+alias ls='eza'
+alias grep='grep --color=auto'
+
+if command -v fastfetch >/dev/null 2>&1; then
+    if [[ -n ${KITTY_WINDOW_ID:-} && -z ${TMUX:-} && -f ~/.config/fastfetch/fetch.gif ]]; then
+        fastfetch --kitty-icat ~/.config/fastfetch/fetch.gif
+    else
+        fastfetch
+    fi
+fi
+
+if command -v starship >/dev/null 2>&1; then
+    eval "$(starship init bash)"
+fi

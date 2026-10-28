@@ -1,0 +1,6 @@
+{{- $keyboard := promptStringOnce . "keyboard" "Keyboard layout" "es" -}}
+{{- $gui := promptBoolOnce . "gui" "Hyprland and other utils installed?" false -}}
+
+[data]
+    keyboard = {{ $keyboard | quote }}
+    gui = {{ $gui }}

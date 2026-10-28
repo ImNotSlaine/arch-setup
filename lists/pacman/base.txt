@@ -10,6 +10,9 @@ xdg-utils
 xdg-user-dirs
 man-db
 htop
+chezmoi
+starship
+fastfetch
 
 # Fonts
 ttf-mononoki-nerd

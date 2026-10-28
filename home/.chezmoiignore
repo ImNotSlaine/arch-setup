@@ -1,0 +1,4 @@
+{{ if not .gui }}
+.config/hypr
+.config/uwsm
+{{ end }}

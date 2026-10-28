@@ -3,17 +3,13 @@
 Arch setup script and dotfiles for my personal computers.
 
 ## install.sh usage
-./install [OPTIONS]
---laptop: Install common laptop utilities
---wm: Install hyprland and gui programs, ask to download dotfiles
---dev: Install code
---edit: Install audio, video and image editing programs
---only M: Install only the next module (M)
---dry-run: Shows results without executing
--h, --help: Shows this help
+./install [OPTIONS]  
+--laptop: Install common laptop utilities  
+--wm: Install hyprland and gui programs, ask to download dotfiles  
+--dev: Install code  
+--edit: Install audio, video and image editing programs  
+--only M: Install only the next module (M)  
+--dry-run: Shows results without executing  
+-h, --help: Shows this help  
 
 Use GPU_OVEERRIDE=nvidia,intel,amd to force a detected GPU
-
-## Hyprland configuration
-
-When installing the --wm module, the script will prompt to download the Tokyo Neon dotfiles. If yes, it will automatically start the configuration script after downloading.

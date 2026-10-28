@@ -1,0 +1,17 @@
+theme:
+  name: tokyo-neon
+  bg: "0a0e2e"
+  bg_alt: "8766bb"
+  bg_highlight: "b58bf9"
+  fg: "fffdeb"
+  fg_dim: "d2b7ff"
+  muted: "d2b7ff"
+
+  accent: "b58bf9"
+  accent_alt: "8766ff"
+  border_active: "b58bf9"
+  border_inactive: "8766ff"
+  success: "60b34d"
+  warning: "d29000"
+  error: "ed76b3"
+  info: "00b2ab"
