@@ -10,7 +10,7 @@ LAPTOP=0; WM=0; DEV=0; GAMING=0; EDIT=0; DRY_RUN=0; ONLY=()
 
 usage() {
     cat <<USAGE
-Use: $0 --profile laptop|desktop [options]
+Use: $0 [options]
     --wm        Add the window manager module (automatic if --dev, --gaming or --edit option is selected)
     --laptop    Add laptop module
     --dev       Add development module
